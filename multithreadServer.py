@@ -37,7 +37,7 @@ def main():
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    server.bind((0.0.0.0, PORT))
+    server.bind(("0.0.0.0", PORT))
 
     print("Server started")
     print("Waiting for client request..")
